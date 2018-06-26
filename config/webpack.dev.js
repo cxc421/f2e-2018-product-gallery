@@ -11,7 +11,8 @@ module.exports = merge.smart(webpackCommon, {
     open: false,
     historyApiFallback: true,
     overlay: true,
-    contentBase: path.join(__dirname, 'dist')
+    contentBase: path.join(__dirname, 'dist'),
+    host: '0.0.0.0'
   },
   devtool: "cheap-eval-source-map",
   plugins: [
