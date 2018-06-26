@@ -20,3 +20,15 @@
   line-height: 28px;  
   font-style: italic;
 }
+
+@mixin _breakpoint($maxWidth) {
+  @media (max-width: $maxWidth) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @include _breakpoint(767px) {
+    @content;
+  }
+}

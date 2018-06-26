@@ -113,7 +113,7 @@ class App extends React.Component {
         </div>
         <div className="product-7">
           {
-            this.renderGridLines(5, 3)
+            // this.renderGridLines(5, 3)
           }      
           <div className="img-area">
             <img src={IMG_7} alt="product image 7" />
