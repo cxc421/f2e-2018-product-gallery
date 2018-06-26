@@ -38,9 +38,9 @@ class App extends React.Component {
             // this.renderGridLines(6, 5)           
           }
           <div className="border-box"></div>
-          <div className="img-area">
+          <a href="#" className="img-area">
             <img src={IMG_1} alt="product image 1"/>
-          </div>
+          </a>
           <h2 className="title" text="LINEN BLAZER">LINEN BLAZER</h2>
           <div className="zebra-box"></div>
           <div className="number">01</div>
