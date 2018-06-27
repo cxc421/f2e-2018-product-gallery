@@ -11,6 +11,7 @@ import IMG_6 from 'images/product-6.jpg';
 import IMG_7 from 'images/product-7.jpg';
 
 import GridLines from 'components/GridLines';
+import Logo from 'components/Logo';
 
 export default class Home extends React.Component {
 
@@ -19,7 +20,7 @@ export default class Home extends React.Component {
       <div className="home-page">
 
         <div className="header">
-          <div className="logo">CCCLOTHES</div>
+          <Logo />
           <h1>MEN’S TOPS</h1>
         </div>
 
