@@ -106,14 +106,52 @@
 
   .product-block-2 {
     grid-area: 9 / 2 / span 4 / -2;
-    background: yellowgreen;
-    opacity: .5;
+    // background: yellowgreen;
+    // opacity: .5;
+
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(6, 1fr);
+
+    .title-1 {
+      @include title-2;
+      grid-area: 1 / 2 / span 1 / span 3;
+    }
+    .title-2 {
+      @include subtitle;
+      grid-area: 1 / 2 / span 1 / span 4;
+      align-self: end;
+      transform: translate(.5%, -30%);
+    }
+    .title-3 {
+      font-size: 24px;    
+      line-height: 36px;
+      font-weight: 700;
+      font-style: italic;
+      grid-area: 1 / 1 / 2 / span 3;      
+
+      display: flex;
+      align-items: flex-end;
+
+      transform-origin: left bottom;
+      transform: translateY(-100%) rotate(90deg);      
+    }
+    .content {
+      @include paragraph;
+      grid-area: 2 / 2 / span 3 / -1;
+    }
   }
 
   .product-block-3 {
     grid-area: 14 / 1 / -1 / -1;
     background: lightslategrey;
     opacity: .5;
+
+    display: grid;
+    grid-template: repeat(7, 1fr) / repeat(8, 1fr);
+
+    .img-1 {
+      grid-area: 3 / 4 / span 4 / span 4;
+    }
   }  
   
 }

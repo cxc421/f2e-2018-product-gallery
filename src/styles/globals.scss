@@ -24,6 +24,18 @@ $max-width: 960px;
   font-style: italic;
 }
 
+@mixin subtitle {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 36px;    
+}
+
+@mixin paragraph {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
 @mixin _breakpoint($maxWidth) {
   @media (max-width: $maxWidth) {
     @content;
