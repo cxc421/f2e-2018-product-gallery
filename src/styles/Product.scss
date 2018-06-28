@@ -7,6 +7,10 @@
 
   display: grid;
   grid-template: repeat(20, 100px) / repeat(8, 1fr);
+
+  @include small_mobile {
+    grid-template: repeat(22, 100px) / repeat(8, 1fr);
+  }
   
   max-width: $max-width;
   box-sizing: content-box;
@@ -115,6 +119,7 @@
     .title-1 {
       @include title-2;
       grid-area: 1 / 2 / span 1 / span 3;
+      white-space: nowrap;
     }
     .title-2 {
       @include subtitle;
@@ -143,14 +148,41 @@
 
   .product-block-3 {
     grid-area: 14 / 1 / -1 / -1;
-    background: lightslategrey;
-    opacity: .5;
+    // background: lightslategrey;
+    // opacity: .5;
 
     display: grid;
     grid-template: repeat(7, 1fr) / repeat(8, 1fr);
 
-    .img-1 {
+    @include small_mobile {
+      grid-area: 16 / 1 / span 7 / -1;
+    }
+
+    .img-2 {
       grid-area: 3 / 4 / span 4 / span 4;
+    }
+
+    .img-1 {
+      grid-area: 1 / 2 / span 3 / span 3;
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    .border-box {
+      grid-area: 2 / 1 / span 2 / span 4;
+      transform: translate(12.5%, 25%);
+    }
+
+    .solid-box {
+      grid-area: 2 / -1 / span 2 / -3;
+      transform: translateX(-25%);
+    }
+
+    .zebra-box {
+      grid-area: -1 / 2 / -2 / span 2;
+      transform: translate(25%, -50%);
     }
   }  
   

@@ -13,7 +13,9 @@ export default class Product extends React.Component {
   render() {
     return (
       <div className="product-page">
-        <GridLines rowNum={20} colNum={8} />
+        {
+          // <GridLines rowNum={20} colNum={8} />
+        }        
 
         <div className="prev-btn-area">
           <i className="fas fa-arrow-left"></i>
@@ -45,9 +47,15 @@ export default class Product extends React.Component {
         </div>
 
         <div className="product-block-3">
-          <div className="img-area img-1">
+          <div className="img-area img-2">
             <img src={IMG_6_2} alt="image 6-2"/>
           </div>
+          <div className="img-area img-1">
+            <img src={IMG_6_1} alt="image 6-1" />
+          </div>
+          <div className="border-box"></div>
+          <div className="solid-box"></div>
+          <div className="zebra-box"></div>
         </div>
 
       </div>

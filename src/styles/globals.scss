@@ -1,5 +1,5 @@
-// $max-width: 1024px;
 $max-width: 960px;
+$max-width: 1200px;
 
 @mixin logo {
   font-size: 20px;
@@ -44,6 +44,12 @@ $max-width: 960px;
 
 @mixin mobile {
   @include _breakpoint(767px) {
+    @content;
+  }
+}
+
+@mixin small_mobile {
+  @include _breakpoint(700px) {
     @content;
   }
 }
