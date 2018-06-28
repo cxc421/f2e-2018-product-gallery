@@ -1,11 +1,10 @@
-### A Simple Webpack4 React + SCSS template
+# F2E - Product Gallery
 
-#### Commands:
-- `npm start`: Start a hot-moudule-replacement environment wiith JS & SCSS
-- `npm build`: Build release files.  
+> Demo: https://cxc421.github.io/f2e-2018-product-gallery/
 
-#### To-Do:
-- js dynamic import
-- express HMR setup
+## Development Tags
 
-
+*   React
+*   Webpack
+*   CSS - grid
+*   SASS
