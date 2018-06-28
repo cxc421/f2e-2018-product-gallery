@@ -6,5 +6,5 @@
 
 *   React
 *   Webpack
-*   CSS - grid
+*   CSS - Grid
 *   SASS
